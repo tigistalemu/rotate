@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="189dp"
+
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:background="#E5EDE5"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="100sp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="168dp"
+        android:layout_height="70dp"
+        android:layout_below="@id/textView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="51dp"
+        android:background="#DAFFB96F"
+        android:onClick="countUp"
+        android:text="COUNT"
+        android:textSize="36sp"
+        tools:ignore="OnClick" />
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="297dp"
+        android:layout_height="108dp"
+        android:layout_below="@id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="63dp"
+        android:ems="10"
+        android:hint="THis is an edit text"
+        android:inputType="textPersonName" />
+</RelativeLayout>
